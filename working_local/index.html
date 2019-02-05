@@ -1,0 +1,95 @@
+<!doctype html>
+<HTML itemscope="" itemtype="http://schema.org/WebPage" lang="en-IN"><head><meta charset="UTF-8" >
+  <H1> Cloud Login </H1>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<script language="JavaScript">
+function clic(element)
+{
+   alert("Clicked on " + element.value);
+   return false;
+}
+
+function submitcheck(element)
+{
+  alert("The action to execute is " + element.action);
+  return false;
+}
+</script>
+
+<body>
+  <TABLE>
+     <TR>
+          <TD> 
+               <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+                  User Name:<input type="text" name="mytext" value=" "> </TI>
+               </form> 
+          </TD>
+          <TD> 
+               <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+               <input type="submit" name="Hello" value="Submit";">
+               </form> 
+          </TD>
+     </TR>
+     <TR>
+          <TD> 
+               <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+               Password: <input type="password" name="Password" id="pass-wd" value="12345">
+               </form> 
+          </TD>
+          <TD> 
+               <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+               <input type="hidden" value="code"> 
+               Rememeber me:<input type="checkbox" name="cb1" value="true" checked>
+               </form>
+          </TD>
+     </TR>
+
+     <TR>
+        
+          <TD>
+              Select one:
+          </TD> 
+          <TD>
+               <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+               Apple pie  <input type="radio" name="radioA" value="radio1">  <BR>
+               Biscut  <input type="radio" name="radioB" value="radio1"> <BR>
+               Cracker  <input type="radio" name="radioC" value="radio1"> <BR>
+               Doughnut  <input type="radio" name="radioD" value="radio1"> <BR>
+               Sandwich  <input type="radio" name="radioE" value="radio1"> <BR>
+               </form>
+          </TD>
+     </TR>
+     <TR>
+          <TD>
+               Select your Favorite Fruit 
+          </TD>
+          <TD>
+              <form method="post" action="hello" onSubmit="return submitcheck(this);" >
+              <select name="select">
+                 <option>cherry</option>
+                 <option>orange</option>
+                 <option>apple</option>
+              </select>
+              </form>
+          </TD>
+     </TR>
+     <TR>
+          <TD> <form method="GET" action="">
+               <input type="button" name="My button" value="Click" onClick="clic(this);">
+              </form>  
+          </TD>
+          <TD> 
+               <form method="GET" action="">
+              <input type="button" name="Save"  value="Push" onClick="clic(this);" >
+              </form> 
+          </TD>
+     </TR>
+  </TABLE>
+</body>
+</HTML>
